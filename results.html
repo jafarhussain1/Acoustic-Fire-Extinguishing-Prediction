@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="../static/style2.css">
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJMo9Ji9L5vEj9z1kX-q0DJFSn1YaspMvVQ&s');
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+            /* Add more background properties if needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/details">Details</a></li>
+                <li><a href="/predict" class="predict-button">Predict</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Prediction Results</h1>
+            <p>{{ prediction_text }}</p>
+        </section>
+    </main>
+</body>
+</html>
