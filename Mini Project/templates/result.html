@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Extinguishing Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .predict-button {
+            background-color: #ff0048;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        main {
+            background-image: url('../static/images/fire\ img.jpg');
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+            padding: 100px 20px;
+        }
+
+        .result h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .result p {
+            font-size: 1.5em;
+        }
+
+        .result h2 {
+            font-size: 2.5em;
+            color: #ff0048;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .useful-links, .contact-us {
+            width: 45%;
+        }
+
+        .useful-links ul, .social-media {
+            list-style: none;
+            padding: 0;
+        }
+
+        .useful-links li, .contact-us p, .social-media a {
+            margin: 5px 0;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/images/fire logo.png" alt="Acoustic Fire Extinguishers Logo">
+            <span>The cleaner and safer way to put out fire.</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="predict-button">Predict</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="result">
+            <h1>RESULTS</h1>
+            <p>Based on the inputs the model predicts that</p>
+            <h2>The fire is in extinction state.</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="useful-links">
+                <h3>USEFUL LINKS</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Predict</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h3>CONTACT US</h3>
+                <p>A108 Adam Street<br>Pune, Pune 411048<br>India</p>
+                <p>Phone: +91 8888 8888 88<br>Email: info@example.com</p>
+                <div class="social-media">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
