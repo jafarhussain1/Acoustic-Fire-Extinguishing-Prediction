@@ -1,0 +1,146 @@
+/* Reset some default browser styles */
+body, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.logo h2 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.logo p {
+    font-style: italic;
+    margin-top: 5px;
+    color: #ccc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.predict-btn {
+    background-color: #d9534f; /* Bootstrap's danger color */
+    border-radius: 4px;
+}
+
+/* Main content styling */
+main {
+    background-image: url('../images/fire\ image.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.result h2 {
+    margin-bottom: 10px;
+    color: #d9534f; /* Bootstrap's danger color */
+}
+
+.result h3 {
+    color: #5cb85c; /* Bootstrap's success color */
+    margin-top: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .logo-footer,
+footer .useful-links,
+footer .contact-us {
+    flex: 1;
+    margin: 10px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+footer address a {
+    color: #5bc0de; /* Bootstrap's info color */
+    text-decoration: none;
+}
+
+footer address a:hover {
+    text-decoration: underline;
+}
+
+.social-media img {
+    width: 20px;
+    margin: 0 5px;
+}
