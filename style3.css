@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.predict-button button {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.predict-button button:hover {
+    background-color: #c0392b;
+}
+
+main {
+    background-image: url('fire-background.jpg');
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.input-section h1 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.input-section p {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.predict {
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.predict:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+}
