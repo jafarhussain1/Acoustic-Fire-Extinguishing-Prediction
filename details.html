@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNvWALEwWNA4TBdh7eHX_sfqqxvgY8EKpbig&s') no-repeat center center fixed;
+            background-size: cover;
+            color: #15da8b;
+        }
+        header {
+            background: rgba(51, 51, 51, 0.9);
+        
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 10px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: rgb(223, 183, 183);
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        nav ul li a:hover {
+            background: #575757;
+        }
+        .predict-button {
+            background: #e74c3c;
+            padding: 30px 30px;
+            border-radius: 10px;
+        }
+        .predict-button:hover {
+            background: #c0392b;
+        }
+        main {
+            padding: 50px;
+        }
+        section {
+            background: rgba(20, 1, 1, 0.9);
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            color: #333;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .details {
+            display: flex;
+            justify-content: space-between;
+        }
+        .details > div {
+            width: 45%;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .images img {
+            width: 48%;
+            margin: 1%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body> 
+    <header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/details">Details</a></li>
+            <li><a href="/predict" class="predict-button">Predict</a></li>
+        </ul>
+    </nav>
+</header>
+    <h1>Enter Details for Prediction</h1>
+    <form action="/predict" method="post">
+        SIZE: <input type="text" name="SIZE" required><br>
+        FUEL: <input type="text" name="FUEL" required><br>
+        DISTANCE: <input type="text" name="DISTANCE" required><br>
+        DESIBEL: <input type="text" name="DESIBEL" required><br>
+        AIRFLOW: <input type="text" name="AIRFLOW" required><br>
+        FREQUENCY: <input type="text" name="FREQUENCY" required><br>
+        <input type="submit" value="Predict">
+       
+    </form>
+</body>
+</html>
